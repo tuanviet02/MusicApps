@@ -58,7 +58,7 @@ const songs = [
     },
     {
         id:"11",
-        songName: `Lửng Lơ <br><div class="subtitle">MASEW x BRAY ft. RedT x Ý Tiên</div>`,
+        songName: `Mất Trăm Năm <br><div class="subtitle">Anh Khoa Đấy</div>`,
         poster: "img/11.jpg",
     },
     {
@@ -83,7 +83,7 @@ const songs = [
     },
     {
         id:"16",
-        songName: `Hơi ảo <br><div class="subtitle">Lucin3x</div>`,
+        songName: `Là Anh <br><div class="subtitle">Là Anh Việt Đây</div>`,
         poster: "img/16.jpg",
     },
     {
@@ -122,6 +122,20 @@ masterPlay.addEventListener('click',()=>{
     }
 } )
 
+let btnPlay = document.getElementById('btn-play');
+btnPlay.addEventListener('click',()=>{
+    if (music.paused || music.currentTime <=0) {
+        music.play();
+        btnPlay.classList.remove('bi-play-fill');
+        btnPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+    } else {
+        music.pause();
+        btnPlay.classList.add('bi-play-fill');
+        btnPlay.classList.remove('bi-pause-fill');
+        wave.classList.remove('active2');
+    }
+} )
 
 const makeAllPlays = () =>{
     Array.from(document.getElementsByClassName('playListPlay')).forEach((element)=>{
