@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon_96x96.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Wedding</title>
+</head>
+
+<body>
+<header>
+    <div class="menu_side">
+        <h1>Playlist</h1>
+        <div class="playlist">
+            <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i> Playlist</h4>
+            <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Last Listening</h4>
+            <h4 ><span></span><i class="bi bi-music-note-beamed"></i> Recommended</h4>
+        </div>
+        <div class="menu_song">
+            <li class="songItem">
+                <span>01</span>
+                <img src="img/1.jpg" alt="Alan">
+                <h5>
+                    Ngày Hôm Nay Em Cưới Rồi
+                    <div class="subtitle">Khải Đăng</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+            </li>
+            <li class="songItem">
+                <span>02</span>
+                <img src="img/2.jpg" alt="Alan">
+                <h5>
+                    Em Sẽ Là Cô Dâu
+                    <div class="subtitle">Minh Vương M4U</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+            </li>
+            <li class="songItem">
+                <span>03</span>
+                <img src="img/3.jpg" alt="Alan">
+                <h5>
+                    Hơn Cả Yêu
+                    <div class="subtitle">Đức Phúc</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+            </li>
+            <li class="songItem">
+                <span>04</span>
+                <img src="img/4.jpg" alt="Alan">
+                <h5>
+                    Cưới nhau đi
+                    <div class="subtitle">Bùi Anh Tuấn FT Hiền Hồ</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+            </li>
+            <li class="songItem">
+                <span>05</span>
+                <img src="img/5.jpg" alt="Alan">
+                <h5>
+                    EM ĐỒNG Ý (I DO)
+                    <div class="subtitle">Đức Phúc x 911 x Khắc Hưng</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+            </li>
+            <li class="songItem">
+                <span>06</span>
+                <img src="img/6.jpg" alt="Alan">
+                <h5>
+                    Làm Vợ Anh Nhé
+                    <div class="subtitle">Chi Dân</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+            </li>
+            <li class="songItem">
+                <span>07</span>
+                <img src="img/7.jpg" alt="Alan">
+                <h5>
+                    Beautiful in white
+                    <div class="subtitle">Shane Filan</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+            </li>
+            <li class="songItem">
+                <span>08</span>
+                <img src="img/8.jpg" alt="Alan">
+                <h5>
+                    Vợ Tuyệt Vời Nhất
+                    <div class="subtitle">Vũ Duy Khánh</div>
+                </h5>
+                    <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+            </li>
+        </div>
+    </div>
+
+
+    <div class="song_side">
+        <nav>
+            <ul>
+                <li>Discover <span></span></li>
+                <li>MY LIBRARY</li>
+                <li>RADIO</li>
+            </ul>
+            <div class="search">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Search Music...">
+            </div>
+            <div class="user">
+                <img src="img/avatar.JPG" alt="User" title="Nguyễn Việt (TN)">
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Đội Nhà Zaiiiiiii</h1>
+            <p>
+                Đội nhà zaiii thái nguyên uống rượu chưa bao giờ biết đến từ "say" là gì!!!
+                <br>
+                Đội nhà zaiii bất tử!!! 
+                <i class="bi bi-suit-heart-fill"></i>
+                <i class="bi bi-suit-heart-fill"></i>
+                <i class="bi bi-suit-heart-fill"></i>
+            </p>
+            <div class="buttons">
+                <button>PLAY</button>
+                <button>FOLLOW</button>
+            </div>
+        </div>
+        <div class="popular_song">
+            <div class="h4">
+                <h4>Popular Song</h4>
+                <div class="btn_s">
+                    <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="pop_song">
+                <!-- <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/1.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li> -->
+                <!-- <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/1.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                        
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li> -->
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/9.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                    </div>
+                    <h5>Vợ Người Ta Remix
+                        <br>
+                        <div class="subtitle">Phan Mạnh Quỳnh</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/10.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/11.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/12.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/13.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/14.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/15.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/16.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/17.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+                <li class="songItem">
+                    <div class="img_play">
+                        <img src="img/18.jpg" alt="alan">
+                        <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                    </div>
+                    <h5>On My Way
+                        <br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                </li>
+            </div>
+        </div>
+        <div class="popular_artists">
+            <div class="h4">
+                <h4>Popular Artists</h4>
+                <div class="btn_s">
+                    <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                    <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                </div>
+            </div>
+            <div class="item">
+                <li>
+                    <img src="img/vit/anh-1.jpg" alt="Arjit Singh" title="Đội nhà zai 1">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-2.jpg" alt="Alan Walker" title="Đội nhà zai 2">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-3.jpg" alt="Atif Aslam" title="Đội nhà zai 3">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-4.jpg" alt="Guru RAndawa" title="Đội nhà zai 4">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-5.jpg" alt="Dhvani" title="Đội nhà zai 5">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-6.jpg" alt="Diljit Dosanjh" title="Đội nhà zai 6">
+                </li>
+                <li>
+                    <img src="img/vit/Anh-7.jpg" alt="Jubin Nautiyal" title="Đội nhà zai 7">
+                </li>
+                <li>
+                    <img src="img/vit/anh-8.jpg" alt="Neha Kakker" title="Đội nhà zai 8">
+                </li>
+                <li>
+                    <img src="img/vit/anh-9.jpg" alt="Justin Bieber" title="Đội nhà zai 9">
+                </li>
+                <li>
+                    <img src="img/vit/anh-10.jpg" alt="Honey Singh" title="Đội nhà zai 10">
+                </li>
+                <li>
+                    <img src="img/vit/anh-11.jpg" alt="Akhil" title="Đội nhà zai 11">
+                </li>
+                <li>
+                    <img src="img/vit/anh-12.jfif" alt="Akhil" title="Đội nhà zai 12">
+                </li>
+                <li>
+                    <img src="img/vit/anh-13.jpg" alt="Akhil" title="Đội nhà zai 13">
+                </li>
+                <li>
+                    <img src="img/vit/anh-14.jpg" alt="Akhil" title="Đội nhà zai 14">
+                </li>
+                <li>
+                    <img src="img/vit/anh-15.jpg" alt="Akhil" title="Đội nhà zai 15">
+                </li>
+                <!-- change all img  -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="master_play">
+        <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+        </div>
+        <img src="img/1.jpg" alt="Alan" id="poster_master_play">
+        <h5 id="title">Ngày Hôm Nay Em Cưới Rồi<br>
+            <div class="subtitle">Khải Đăng</div>
+        </h5>
+        <div class="icon">
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+            <input type="range" id="seek" min="0" value="0" max="100" step="1">
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+        <div class="vol">
+            <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+            <input type="range" id="vol" min="0" value="30" max="100">
+            <div class="vol_bar"></div>
+            <div class="dot" id="vol_dot"></div>
+        </div>
+
+        <audio class="audio" src=""></audio>
+    </div>
+</header>
+    <script src="app.js"></script>
+</body>
+
+</html>
